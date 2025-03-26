@@ -67,9 +67,31 @@ namespace MNSDotNetCore.ConsoleApp
 
             string message = result > 0 ? "Saving Successful!" : "Saving Failed!";
             Console.WriteLine(message);
+        }
 
-            
-            
+        public void update(int id, string title, string author, string content)
+        {
+            SqlConnection connection = new SqlConnection (_sqlConnectionStringBuilder.ConnectionString);
+            connection.Open();
+
+            string query = @"UPDATE [dbo].[Tbl_Blog]
+   SET [BlogTitle] = @BlogTitle
+      ,[BlogAuthor] = @BlogAuthor
+      ,[BlogContent] = @BlogContent
+ WHERE BlogId = @BlogId";
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@BlogId", id);
+            cmd.Parameters.AddWithValue("@BlogTitle", title);
+            cmd.Parameters.AddWithValue("@BlogAuthor", author);
+            cmd.Parameters.AddWithValue("@BlogContent", content);
+
+            int result = cmd.ExecuteNonQuery();
+            connection.Close();
+
+            string message = result > 0 ? "Updating Successful!" : "Updataing Failed!";
+            Console.WriteLine(message);
+
+
         }
     }
 }
