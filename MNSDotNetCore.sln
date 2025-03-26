@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35913.81 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNSDotNetCore.ConsoleApp", "MNSDotNetCore.ConsoleApp\MNSDotNetCore.ConsoleApp.csproj", "{3FE78A69-89F1-47E3-9DBF-2C547FDD67B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNSDotNetCore.ConsoleApp", "MNSDotNetCore.ConsoleApp\MNSDotNetCore.ConsoleApp.csproj", "{C9EA71ED-83E0-4582-B058-4DB327CB14EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +16,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3FE78A69-89F1-47E3-9DBF-2C547FDD67B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3FE78A69-89F1-47E3-9DBF-2C547FDD67B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3FE78A69-89F1-47E3-9DBF-2C547FDD67B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3FE78A69-89F1-47E3-9DBF-2C547FDD67B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9EA71ED-83E0-4582-B058-4DB327CB14EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9EA71ED-83E0-4582-B058-4DB327CB14EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9EA71ED-83E0-4582-B058-4DB327CB14EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9EA71ED-83E0-4582-B058-4DB327CB14EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4C24A1A2-37AB-4601-A9AD-8EC3D620BEE2}
+		SolutionGuid = {F324B962-CCE1-4C19-8A82-8BD057AE1E9F}
 	EndGlobalSection
 EndGlobal
